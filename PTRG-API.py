@@ -1,6 +1,6 @@
 ﻿#AddDevice
 def adddevice(devicename,deviceip,devicetempID,probeID):
-# This fonction is inserting device from template to PRTG and resume it to monitoring
+# This fonction is inserting device or probe from template to PRTG and resume it to monitoring
     try:
         resp = requests.get("https://ServerIPorNAME/api/duplicateobject.htm?id="+str(devicetempID)+"&name="+str(devicename)+"&host="+str(deviceip)+"&targetid="+str(probeID)+"&username=prtgadmin&password=Password",verify=False)
         print resp
