@@ -12,10 +12,10 @@ Get all sensors of device
 
 Insert Device and Resume - Cloning from template device
 
-Remove Object (Device, Sensor, Probe).
+Remove Object (Device, Sensor, Probe)
 
-Pause Object
+Pause Object (Device, Sensor, Probe)
 
-Resume Object
+Resume Object (Device, Sensor, Probe)
 
 Insert Group and Resume - Cloning from Template
