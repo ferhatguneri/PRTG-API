@@ -1,11 +1,21 @@
 # PRTG Rest API - Python
 
-AddDevice
+Functions:
 
-Print all probes in PTRG
+Get All Probes from PRTG
 
-print all devices in PRTG
+Get Graphic by Sensor ID
 
-Print all sensors by device ID
+Get all devices from PRTG
 
-get graphic by sensorID for last 2 hour
+Get all sensors of device
+
+Insert Device and Resume - Cloning from template device
+
+Remove Object (Device, Sensor, Probe).
+
+Pause Object
+
+Resume Object
+
+Insert Group and Resume - Cloning from Template
