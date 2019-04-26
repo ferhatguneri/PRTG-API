@@ -1,6 +1,5 @@
 #Creted By Ferhat Guneri
 #Mail: guneriferhat21@gmail.com
-#Written Python 2.7
 
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
