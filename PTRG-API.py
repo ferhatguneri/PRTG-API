@@ -42,7 +42,7 @@ def getsensors(deviceID):
 #getsensors("1111")
 
 
-#Insert Device - Cloning from template device
+#Insert Device and Resume - Cloning from template device
 def adddevice(TempDeviceID,DeviceName,DeviceIP,GroupID):
 # Bu komut ile template devide den yeni device oluşturma işlemi yapılır.
     try:
@@ -78,7 +78,7 @@ def resumeObject(objectID):
 resumeObject("2052")
 
 
-#Insert Group - Cloning from Template
+#Insert Group and Resume - Cloning from Template
 def addGroup(TempGroupID,NewGroupName,DestinationGroupID):
     res = requests.get("https://prtg.server.com/api/duplicateobject.htm?id="+str(TempGroupID)+"&name="+str(NewGroupName)+"&targetid="+str(DestinationGroupID)+"&username=prtgadmin&password=*****")
     print res
@@ -87,4 +87,4 @@ def addGroup(TempGroupID,NewGroupName,DestinationGroupID):
         newGroupID = id[2]
     respo = requests.get("https://prtg.server.com/api/pause.htm?id="+str(newGroupID)+"&action=1&username=prtgadmin&password=*****")
     print respo
-#addGroup("8508","Yeni Müşteri","1")
+#addGroup("8508","Customer","1")
