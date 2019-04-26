@@ -65,13 +65,13 @@ def removeObject(objectID):
     print res
 #removeObject("8481")
 
-#Pause Object
+#Pause Object (Device, Sensor, Probe)
 def pauseObject(objectID):
     res = requests.get("https://prtg.server.com/api/pause.htm?id="+str(objectID)+"&action=0&username=prtgadmin&password=*****")
     print res
 #pauseObject("8330")
 
-#Resume Object
+#Resume Object (Device, Sensor, Probe)
 def resumeObject(objectID):
     res = requests.get("https://prtg.server.com/api/pause.htm?id="+str(objectID)+"&action=1&username=prtgadmin&password=*****")
     print res
