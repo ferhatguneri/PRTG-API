@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import sys
+import json
+import requests
+import time
+
+
 #Get All Probes from PRTG
 def getprobes():
     res = requests.get("https://prtg.server.com/api/table.xml?content=probes&output=json&columns=objid,name&filter_parentid=1&username=prtgadmin&password=*****")
